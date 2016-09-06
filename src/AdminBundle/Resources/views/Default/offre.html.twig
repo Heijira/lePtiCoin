@@ -1,0 +1,15 @@
+{% extends "AdminBundle:Default:admin.html.twig" %}
+{% block title %}Offres{% endblock %}
+ {% block body %}
+     {%for teub in offre%}
+         <p>{{teub.titres}}</p>
+         <p>{{teub.images}}</p>
+         <p>{{teub.description}}</p>
+         <p>{{teub.prix}}</p>
+         <p>{{teub.vendeurs}}</p>
+         <p>{{teub.date}}</p>
+         <p>{{teub.telephone}}</p>
+         <p>{{teub.categorie}}</p>
+         <p>{{teub.localite}}</p>
+    {%endfor%}
+ {% endblock %}
